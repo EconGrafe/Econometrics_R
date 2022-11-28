@@ -3,6 +3,8 @@ library(sf)
 
 munven <- st_read("C:/XX/XX/map/Municipios_Venezuela.shp") #Colocar dirección donde se descargó la carpeta "map"
 
+#Luego de hacer lo anterior, invocar la BDD "Municipios" como un tibble o data frame
+
 names(Municipios) <- c("CODE", "STATE", "MUNICIPIO", "URBAN", "RURAL", 
                        "POP")
 
