@@ -1,7 +1,7 @@
 library(tidyverse)
 library(sf)
 
-munven <- st_read("C:/Users/Zadquiel/Documentos/Folder/Datoa/map/Municipios_Venezuela.shp")
+munven <- st_read("C:/XX/XX/map/Municipios_Venezuela.shp") #Colocar dirección donde se descargó la carpeta "map"
 
 names(Municipios) <- c("CODE", "STATE", "MUNICIPIO", "URBAN", "RURAL", 
                        "POP")
