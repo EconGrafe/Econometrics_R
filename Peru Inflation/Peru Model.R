@@ -14,7 +14,7 @@ library(patchwork)
 
 #Create Data Frame
 
-data <- tibble(read_excel("C:/Users/Zadquiel/Documents/Zadquiel/UCV/Politica 1/Peru Statistics.xlsx", 
+data <- tibble(read_excel("Peru Statistics.xlsx", 
                sheet = "data"))
 head(data)
 
