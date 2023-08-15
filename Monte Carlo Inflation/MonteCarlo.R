@@ -4,7 +4,7 @@ pacman::p_load(tidyverse, janitor, forecast, tseries, lmtest, readxl)
 
 # Call Data
 
-inflation <- read_csv('C:/Users/Zadquiel/Documents/Zadquiel/Folder/Datos/inflation.csv') %>% clean_names() %>%
+inflation <- read_csv('inflation.csv') %>% clean_names() %>%
   mutate(cpi = cpi / cpi[1] * 100)
 
 inf <- ts(inflation$var, start = c('2012', '01'), frequency = 12)
